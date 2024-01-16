@@ -34,6 +34,7 @@ function Login() {
             </View>
 
             <View style={styles.content}>
+                <View style={styles.tabWrap}>
                 <Tab
                     value={index}
                     onChange={(e) => setIndex(e)}
@@ -54,6 +55,8 @@ function Login() {
                         buttonStyle={{ height: 44 }}
                     />
                 </Tab>
+                </View>
+                
 
                 <TabView value={index} onChange={setIndex} animationType="spring">
                     <TabView.Item style={styles.tabViewItem}>
@@ -226,6 +229,10 @@ const styles = StyleSheet.create({
     checkBoxWrap: {
         width: 28,
         height:14
+    },
+    tabWrap: {
+        paddingLeft: 16,
+        paddingRight:16
     }
 });
 
