@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { RootSiblingParent } from "react-native-root-siblings";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { NativeBaseProvider } from "native-base";
+import { SSRProvider } from "@react-aria/ssr";
 
 export const queryClient = new QueryClient();
 
@@ -11,7 +12,7 @@ export default function RootLayout() {
         router.replace("/login");
     }, []);
     return (
-        <>
+        <SSRProvider>
             <QueryClientProvider client={queryClient}>
                 <RootSiblingParent>
                     <NativeBaseProvider>
@@ -19,7 +20,7 @@ export default function RootLayout() {
                     </NativeBaseProvider>
                 </RootSiblingParent>
             </QueryClientProvider>
-        </>
+        </SSRProvider>
     );
 }
 
