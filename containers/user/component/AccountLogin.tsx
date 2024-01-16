@@ -5,6 +5,7 @@ import { router } from "expo-router";
 import React from "react";
 import CloseEyeSvg from "@/components/svg/closeEye";
 import OpenEyeSvg from "@/components/svg/openEye";
+import QuickLink from "./QuickLink";
 
 function AccountLogin() {
     const [secureTextEntry, setSecureTextEntry] = React.useState(true);
@@ -51,6 +52,7 @@ function AccountLogin() {
             >
                 登录
             </Button>
+            <QuickLink />
         </>
     );
 }
