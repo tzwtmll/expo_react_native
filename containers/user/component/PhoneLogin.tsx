@@ -4,6 +4,7 @@ import ArrowDownSvg from "@/components/svg/arrowDown";
 import Protocol from "./Protocol";
 import { useCountDown } from "@/utils/useCountDown";
 import { router } from "expo-router";
+import QuickLink from "./QuickLink";
 
 function PhoneLogin() {
     const { nums, goStart } = useCountDown(60);
@@ -60,6 +61,7 @@ function PhoneLogin() {
             >
                 登录
             </Button>
+            <QuickLink />
         </>
     );
 }
