@@ -92,15 +92,18 @@ function Login() {
                                 }
                             />
                             <View style={styles.protocol}>
-                                <CheckBox
-                                    iconType="material-community"
-                                    checkedIcon={<CheckedSvg />}
-                                    uncheckedIcon={<UncheckedSvg />}
-                                    checked={checked}
-                                    onPress={() => setChecked((checked) => !checked)}
-                                    containerStyle={styles.checkBoxContainerStyle}
-                                    wrapperStyle={styles.wrapperStyle}
-                                />
+                                <View style={styles.checkBoxWrap}>
+                                    <CheckBox
+                                        iconType="material-community"
+                                        checkedIcon={<CheckedSvg />}
+                                        uncheckedIcon={<UncheckedSvg />}
+                                        checked={checked}
+                                        onPress={() => setChecked((checked) => !checked)}
+                                        containerStyle={styles.checkBoxContainerStyle}
+                                        wrapperStyle={styles.wrapperStyle}
+                                    />
+                                </View>
+                                
                                 <Text style={styles.protocolText}>我已阅读并同意</Text>
                                 <Text style={styles.protocolLink}>《服务协议》</Text>
                                 <Text style={styles.protocolText}>和</Text>
@@ -220,6 +223,10 @@ const styles = StyleSheet.create({
         margin:0,
         padding:0,
     },
+    checkBoxWrap: {
+        width: 28,
+        height:14
+    }
 });
 
 export default Login;
