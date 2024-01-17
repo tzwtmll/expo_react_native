@@ -10,7 +10,7 @@ export default function StatusBar() {
 
 const styles = StyleSheet.create({
     container: {
-        height: STATUS_BAR_HEIGHT,
-        backgroundColor:'#F7F8FA',
+        height: 47,
+        backgroundColor:'#E6EEFF',
     }
 })
