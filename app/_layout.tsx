@@ -27,7 +27,7 @@ export default function RootLayout() {
 // 不需要和页面交互的路由放这里
 function RootLayoutNav() {
     const pathname = usePathname();
-    const customNav = ["/login", "/userInfo"];
+    const customNav = ["/login", "/welcome"];
 
     if (customNav.includes(pathname)) {
         return <Slot />;

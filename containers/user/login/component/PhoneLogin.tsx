@@ -55,7 +55,7 @@ function PhoneLogin() {
                 style={styles.login_btn}
                 onPress={() =>
                     router.push({
-                        pathname: "/home",
+                        pathname: "/welcome",
                     })
                 }
             >
