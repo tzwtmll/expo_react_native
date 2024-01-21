@@ -12,9 +12,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.pdafe"
@@ -52,10 +50,10 @@
     "extra": {
       "router": {
         "origin": false
-      },
-      "eas": {
-        "projectId": "9dd777ee-6132-4a1f-b0e5-28e188f9f70e"
       }
+      // "eas": {
+      //   "projectId": "9dd777ee-6132-4a1f-b0e5-28e188f9f70e"
+      // }
     }
   }
 }
